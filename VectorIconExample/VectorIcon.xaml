@@ -6,12 +6,12 @@
              xmlns:local="clr-namespace:Didsbury.VectorIconExample"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="400"
-             DataContext="{Binding RelativeSource={RelativeSource Self}}"
-             d:DataContext="{d:DesignInstance {x:Type local:VectorIcon}, IsDesignTimeCreatable=True}">
+             x:Name="Root">
   <Viewbox>
-    <Canvas Width="{Binding PathWidth}" Height="{Binding PathHeight}">
-      <Path Data="{Binding Geometry}" 
-            Fill="{Binding Foreground}"/>
+    <Canvas Width=  "{Binding PathWidth,  ElementName=Root}" 
+            Height= "{Binding PathHeight, ElementName=Root}">
+      <Path Data=   "{Binding Geometry,   ElementName=Root}" 
+            Fill=   "{Binding Foreground, ElementName=Root}"/>
     </Canvas>
   </Viewbox>
 </UserControl>
