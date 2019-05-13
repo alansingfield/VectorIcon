@@ -1,0 +1,29 @@
+﻿<Window x:Class="Didsbury.VectorIconExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Didsbury.VectorIconExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+  <StackPanel>
+    <WrapPanel ItemHeight="60">
+      <local:VectorIcon Style="{StaticResource CopyIcon}" Foreground="Green"/>
+      <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="Blue"/>
+      <local:VectorIcon Style="{StaticResource BugleIcon}" Foreground="Red"/>
+      <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="YellowGreen"/>
+    </WrapPanel>
+    <WrapPanel ItemHeight="80">
+      <local:VectorIcon Style="{StaticResource CopyIcon}" Foreground="Green"/>
+      <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="Blue"/>
+      <local:VectorIcon Style="{StaticResource BugleIcon}" Foreground="Red"/>
+      <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="YellowGreen"/>
+    </WrapPanel>
+    <WrapPanel ItemHeight="106">
+      <local:VectorIcon Style="{StaticResource CopyIcon}" Foreground="Green"/>
+      <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="Blue"/>
+      <local:VectorIcon Style="{StaticResource BugleIcon}" Foreground="Red"/>
+      <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="YellowGreen"/>
+    </WrapPanel>
+  </StackPanel>
+</Window>
