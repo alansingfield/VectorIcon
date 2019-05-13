@@ -103,3 +103,20 @@ Once we've done this we can extract out into a DependencyProperty and style it.
 <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="Blue"/>
 ```
 
+## Just one more thing...
+
+In the examples above, I've used the DataContext="{Binding RelativeSource={RelativeSource Self}}" trick. This is simpler for a quick explanation but it fails when you try use a DataTrigger, the real DataContext gets overwritten by the UserControl object. The proper design looks like:
+
+``` xml
+<UserControl ...
+             x:Name="Root">
+  <Viewbox>
+    <Canvas Width=  "{Binding PathWidth,  ElementName=Root}" 
+            Height= "{Binding PathHeight, ElementName=Root}">
+      <Path Data=   "{Binding Geometry,   ElementName=Root}" 
+            Fill=   "{Binding Foreground, ElementName=Root}"/>
+    </Canvas>
+  </Viewbox>
+</UserControl>
+
+```
