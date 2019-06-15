@@ -1,5 +1,15 @@
 # VectorIcon
 ## WPF vector based icons
+![VectorIcon screenshot](/images/screenshot.png)
+
+``` xml
+<WrapPanel ItemHeight="60">
+  <local:VectorIcon Style="{StaticResource CopyIcon}" Foreground="Green"/>
+  <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="Blue"/>
+  <local:VectorIcon Style="{StaticResource BugleIcon}" Foreground="Red"/>
+  <local:VectorIcon Style="{StaticResource CarIcon}" Foreground="YellowGreen"/>
+</WrapPanel>
+```
 
 This project demonstrates how to style vector-based icons in WPF. It's far harder than it should be, the documentation is particularly unhelpful when explaining this.
 
